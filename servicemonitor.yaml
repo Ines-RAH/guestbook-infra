@@ -1,14 +1,1 @@
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: guestbook-monitor
-  namespace: default
-  labels:
-    release: prometheus
-spec:
-  selector:
-    matchLabels:
-      app: guestbook
-  endpoints:
-    - port: http
-      path: /metrics
+
